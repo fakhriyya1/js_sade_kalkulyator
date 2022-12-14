@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: linear-gradient(90deg, rgba(43,3,189,1) 0%, rgba(127,61,167,1) 29%, rgba(54,38,176,1) 52%, rgba(64,71,200,1) 88%);
+            text-align: center;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 5rem;
+            color: aliceblue;
+        }
+
+        .umumi {
+            display: inline-flex;
+            margin: auto;
+            height: 40vh;
+            align-items: center;
+            border: none;
+        }
+
+        .buttons {
+            display: inline-flex;
+            flex-direction: column;
+            padding: 0rem 1rem;
+            position: relative;
+            bottom: -20px;
+        }
+
+        .buttons .style,
+        .equal {
+            padding: 0.5rem 1rem;
+        }
+
+        .equal{
+            background-color: rgb(255, 255, 255);
+            margin: 0rem 1rem;             position: relative;
+            bottom: -20px;
+        }
+
+        input {
+            padding: 1.5rem;
+            outline: none;
+            margin-top: 50px;
+            border-radius: 0.35rem;
+            border: none;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+            <h1>Calculator</h1>
+
+    <div class="umumi">
+        <input type="number" id="num1">
+        <div class="buttons">
+            <button id="toplama" class="hesab style">+</button>
+            <button id="cixma" class="hesab style">-</button>
+            <button id="vurma" class="hesab style">*</button>
+            <button id="bolme" class="hesab style">/</button>
+        </div>
+        <input type="number" id="num2">
+        <span class="equal">=</span>
+        <input type="number" id="netice">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
